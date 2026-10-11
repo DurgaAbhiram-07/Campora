@@ -1,14 +1,24 @@
 # Campora — Campus Marketplace for Engineering Students
 
 <p align="center">
+  <a href="https://campora-nhej.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Website-campora--nhej.vercel.app-22c55e?style=for-the-badge&logo=vercel" alt="Live Demo" />
+  </a>
+  <img src="https://img.shields.io/badge/Deployment-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Database-Supabase-3ECF8E?style=for-the-badge&logo=supabase" alt="Supabase" />
+</p>
+
+<p align="center">
   <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1000" alt="Campora Banner" width="100%" style="border-radius: 12px;" />
 </p>
 
 <p align="center">
-  <strong>The dedicated peer-to-peer academic exchange and classifieds platform for engineering campuses in Visakhapatnam, Andhra Pradesh.</strong>
+  <strong>The dedicated peer-to-peer academic exchange and classifieds platform for engineering campuses in Visakhapatnam, Andhra Pradesh.</strong><br/>
+  🚀 <strong>Live Production URL:</strong> <a href="https://campora-nhej.vercel.app/"><strong>https://campora-nhej.vercel.app/</strong></a>
 </p>
 
 <p align="center">
+  <a href="https://campora-nhej.vercel.app/">🌐 Open Live App</a> •
   <a href="#features">Features</a> •
   <a href="#supported-campuses">Campuses</a> •
   <a href="#tech-stack">Tech Stack</a> •
