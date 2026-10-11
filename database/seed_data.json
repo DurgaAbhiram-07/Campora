@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "_id": "user_1",
+      "name": "Aarav Sharma",
+      "collegeId": "2023CS1084",
+      "email": "aarav.cs@campus.edu",
+      "phone": "+91 98765 43210",
+      "password": "$2a$10$e8T8f.mO7ZqB.3E40eK2O.b3HwZ1e90t1b3hZ1e90t1b3hZ1e90t1",
+      "department": "Computer Science",
+      "year": "3rd Year",
+      "hosteller": true,
+      "profilePhoto": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+      "idCard": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=600",
+      "verified": true,
+      "role": "STUDENT",
+      "createdAt": "2025-08-15T10:30:00Z"
+    },
+    {
+      "_id": "admin_1",
+      "name": "Dr. Rajesh Gupta",
+      "collegeId": "FAC8802",
+      "email": "admin.gupta@campus.edu",
+      "phone": "+91 99988 77766",
+      "password": "$2a$10$e8T8f.mO7ZqB.3E40eK2O.b3HwZ1e90t1b3hZ1e90t1b3hZ1e90t1",
+      "department": "Dean Student Affairs",
+      "year": "Faculty Lead",
+      "hosteller": false,
+      "verified": true,
+      "role": "ADMIN",
+      "createdAt": "2025-01-01T08:00:00Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "prod_1",
+      "title": "MacBook Air M2 (16GB RAM, 512GB SSD) - Space Gray",
+      "description": "Barely used MacBook Air M2. Pristine condition with original charger and box.",
+      "price": 68500,
+      "category": "Electronics",
+      "condition": "Like New",
+      "images": ["https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=1000"],
+      "sellerId": "user_1",
+      "college": "National Institute of Technology",
+      "department": "Computer Science",
+      "location": "Hostel Block 3, Room 312",
+      "wishlistCount": 34,
+      "views": 420,
+      "status": "ACTIVE",
+      "createdAt": "2026-08-01T14:20:00Z"
+    }
+  ],
+  "categories": [
+    { "_id": "cat_1", "name": "Books" },
+    { "_id": "cat_2", "name": "Electronics" },
+    { "_id": "cat_3", "name": "Hostel Essentials" },
+    { "_id": "cat_4", "name": "Vehicles" },
+    { "_id": "cat_5", "name": "Notes" },
+    { "_id": "cat_6", "name": "Lab Equipment" }
+  ]
+}

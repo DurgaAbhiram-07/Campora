@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #E8E1D5;
+}
+
+html.dark, html.dark body {
+  background-color: #000000 !important;
+  color: #E8E1D5;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    @apply text-stone-900 dark:text-stone-100 bg-[#E8E1D5] dark:bg-[#000000] selection:bg-rose-600 selection:text-white transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    @apply tracking-tight font-extrabold;
+  }
+}
+
+.font-moniqa {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-cursive {
+  font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+/* Glassmorphism Design System - Rich Sand/Linen Canvas & Pitch Black */
+.glass-card {
+  @apply bg-[#F5EFE6] dark:bg-[#121212]/95 backdrop-blur-xl border border-[#CFC4B3] dark:border-stone-800/80 shadow-md shadow-stone-900/5 dark:shadow-none;
+}
+
+.glass-navbar {
+  @apply bg-[#DDD4C3]/95 dark:bg-[#000000]/95 backdrop-blur-md border-b border-[#C5BBAA] dark:border-stone-800/80;
+}
+
+.glass-modal {
+  @apply bg-[#F5EFE6] dark:bg-[#121212]/95 backdrop-blur-2xl border border-[#CFC4B3] dark:border-stone-800 shadow-2xl;
+}
+
+.glass-pill {
+  @apply bg-[#DDD4C3] dark:bg-stone-800/80 backdrop-blur-md border border-[#C5BBAA] dark:border-stone-700/80;
+}
+
+/* Crimson & Gold Warm Gradients over Rich Linen (Light) and Pitch Black (Dark) */
+.bg-hero-gradient {
+  background: radial-gradient(circle at 50% 12%, rgba(225, 29, 72, 0.12), transparent 60%),
+              radial-gradient(circle at 85% 45%, rgba(217, 119, 6, 0.14), transparent 55%),
+              radial-gradient(circle at 15% 75%, rgba(245, 158, 11, 0.12), transparent 55%),
+              #E8E1D5;
+}
+
+html.dark .bg-hero-gradient,
+.dark .bg-hero-gradient {
+  background: radial-gradient(circle at 50% 12%, rgba(225, 29, 72, 0.18), transparent 60%),
+              radial-gradient(circle at 85% 45%, rgba(217, 119, 6, 0.12), transparent 55%),
+              radial-gradient(circle at 15% 75%, rgba(245, 158, 11, 0.10), transparent 55%),
+              #000000;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-600 via-rose-500 to-amber-500 dark:from-rose-400 dark:via-amber-400 dark:to-yellow-400;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-stone-100 dark:bg-stone-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-stone-300 dark:bg-stone-700 rounded-full hover:bg-rose-600 transition-colors;
+}
+
+/* Card Hover Lift */
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-rose-600/15 dark:hover:shadow-amber-500/10;
+}
+

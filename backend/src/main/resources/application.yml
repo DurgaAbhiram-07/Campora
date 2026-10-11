@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: campora-api
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/campora_db}
+      auto-index-creation: true
+
+campora:
+  app:
+    jwtSecret: ${JWT_SECRET:9a4f2c8d7e1b5a3c6d8e0f2a4b6c8d1e3f5a7b9c2d4e6f8a0b2c4d6e8f0a2b4c}
+    jwtExpirationMs: 86400000 # 24 hours
+  cloudinary:
+    cloudName: ${CLOUDINARY_CLOUD_NAME:campora-demo}
+    apiKey: ${CLOUDINARY_API_KEY:1234567890}
+    apiSecret: ${CLOUDINARY_API_SECRET:abcdefghijklmnopqrstuvwxyz}
+
+logging:
+  level:
+    root: INFO
+    com.campora.api: DEBUG
